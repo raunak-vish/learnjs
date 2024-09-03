@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Added basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        button {
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="demo"></h1>
+
+    <button type="button" onclick="myButton()" aria-label="Introduce yourself">Try me</button>
+    <p id="para"></p>
+
+    <button type="button" onclick="window.alert('Your System will be hack.')" aria-label="Alert about hacking">Try me</button>
+
+    <button type="button" onclick="example()" aria-label="Show today's date">Show Today's Date</button>
+
+    <h1 class="name"></h1>
+    <script>
+        let x = 10;
+        let y = 20;
+        const z = x + y;
+        document.getElementById('demo').innerHTML = "The value of z is " + z + " ";
+
+        function myButton() {
+            document.getElementById('para').innerHTML =
+                "Hi, my name is Raunak and I'm starting to learn JavaScript from w3school.";
+        }
+
+        // New function
+        function example() {
+            const currentDate = new Date();
+            const formattedDate = currentDate.toLocaleDateString();
+            document.getElementById('demo').innerHTML = "Today's date is: " + formattedDate;
+        }
+
+        document.getElementById('demo').innerHTML = "Hello World";
+        // Removed document.write
+        window.alert('Raunak be careful');
+        alert("Try this amazing feature");
+
+        console.log("Raunak Vishwakarma");
+    </script>
+
+</body>
+
+</html>
